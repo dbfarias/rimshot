@@ -1,0 +1,43 @@
+name: Joke Submission
+description: Submit new jokes for rimshot
+labels: ["jokes", "good first issue"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for submitting jokes! You can also open a PR directly —
+        just add a line to `jokes/<lang>.txt`.
+
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language
+      options:
+        - English (en)
+        - Portugues Brasileiro (pt-BR)
+        - Espanol (es)
+        - Francais (fr)
+        - Other (specify below)
+    validations:
+      required: true
+
+  - type: textarea
+    id: jokes
+    attributes:
+      label: Jokes
+      description: |
+        One joke per line. Keep it short (under 200 chars ideal).
+        Developer/tech humor only. No offensive content.
+      placeholder: |
+        Why did the developer quit? They didn't get arrays.
+        I would tell you a CSS joke, but it has no style.
+    validations:
+      required: true
+
+  - type: input
+    id: other_language
+    attributes:
+      label: Other language (if selected above)
+      description: Language name and IETF code (e.g., "German - de")
+    validations:
+      required: false

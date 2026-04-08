@@ -1,0 +1,23 @@
+# Blagues de developpeur en Francais pour rimshot
+# Une blague par ligne. Les lignes commencant par # sont des commentaires.
+#
+# Sources: pyjokes (BSD-3-Clause), contributions de la communaute
+# Voir ATTRIBUTIONS.md pour les credits complets.
+
+A quoi sert Internet Explorer? A telecharger Google Chrome.
+Optimiste: Le verre est a moitie plein. Pessimiste: Le verre est a moitie vide. Programmeur: Le verre est 2 fois plus grand que necessaire.
+Comment comparer HTML et HTML5? Est-ce que cela fonctionne avec Internet Explorer? Non? C'est du HTML5.
+Les vrais programmeurs comptent a partir de 0.
+C'est l'histoire d'un programmeur qui entre dans un bar et qui dit 'Hello World'.
+3 bases de donnees SQL rentrent dans un bar NoSQL. Quelque temps plus tard, ils en sortent, car ils n'ont pas trouve de table.
+Une requete SQL entre dans un bar, se met a deux tables et demande: 'Je peux me joindre a vous?'
+Je voudrais faire un meilleur monde, mais on ne veut pas me donner le code source.
+C'est C++ qui dit a C: 'Voyons! Tu n'as pas de classe.'
+Il y a 10 types de personnes: ceux qui savent compter en binaire, et les autres.
+Si Microsoft inventait un truc qui ne plante pas, ce serait un clou.
+Combien faut-il de programmeurs pour changer une ampoule? Aucun, c'est un probleme materiel.
+Quelle est la difference entre Windows XP et un virus? Le virus fonctionne sans aide.
+Un programmeur dit a un autre: Je ne comprends pas, cela fonctionnait mercredi dernier.
+Un programmeur experimente se pose toujours des questions lorsque le code compile du premier coup.
+Toc Toc. Qui est la? Tres longue pause. C'est Internet Explorer.
+Un programmeur se dira toujours: Cela ne fonctionne pas, pourquoi? Et, cela fonctionne, pourquoi?

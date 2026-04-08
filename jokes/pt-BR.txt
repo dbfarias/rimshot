@@ -1,0 +1,82 @@
+# Piadas de programador em Portugues Brasileiro para rimshot
+# Uma piada por linha. Linhas comecando com # sao comentarios.
+#
+# Fontes: pyjokes (BSD-3-Clause), adaptacoes do espanhol, contribuicoes da comunidade
+# Veja ATTRIBUTIONS.md para creditos completos.
+
+Uma query SQL entra num bar, vai ate duas tabelas e pergunta: 'Posso fazer um JOIN com voces?'
+Para entender recursao, voce primeiro precisa entender recursao.
+'Toc, toc.' 'Quem e?' ... longa pausa ... 'Java.'
+Quantos programadores sao necessarios para trocar uma lampada? Nenhum, isso e problema de hardware.
+Qual e o jeito orientado a objetos de ficar rico? Heranca.
+Dois bytes se encontram. O primeiro pergunta: 'Voce esta doente?' O segundo responde: 'Nao, so um pouco off.'
+Por que o programador pediu demissao? Porque ele nao recebia arrays.
+Por que programadores Java usam oculos? Porque eles nao C#.
+Um programador foi encontrado morto no chuveiro. Ao lado, um frasco de shampoo: 'Ensaboe, Enxague, Repita'.
+Otimista: O copo esta meio cheio. Pessimista: O copo esta meio vazio. Programador: O copo e duas vezes maior que o necessario.
+Filho: Pai, por que o sol nasce no leste e se poe no oeste? Pai: Filho, esta funcionando, nao mexe!
+Programadores reais conseguem escrever assembly em qualquer linguagem.
+Garcom: Voce quer cafe ou cha? Programador: Sim.
+Eu contaria uma piada sobre UDP, mas voce nunca receberia.
+Meu amigo tem uma banda chamada '1023 Megabytes'. Ainda nao fizeram nenhum gig!
+Eu tinha um problema e pensei em usar Java. Agora tenho um ProblemFactory.
+Um QA entra num bar. Pede 1 cerveja. Pede 0 cervejas. Pede 99999999 cervejas. Pede -1 cervejas. Pede um lagarto.
+Um product manager entra num bar e pede uma bebida. O barman diz nao, mas vai considerar adicionar depois.
+Como gerar uma string aleatoria? Coloque um calouro de CC no Vim e peca pra ele salvar e sair.
+Uso Vim ha muito tempo... principalmente porque nao consigo descobrir como sair.
+3 DBAs entraram num bar NoSQL. Sairam porque nao encontraram nenhuma table.
+Existem apenas dois problemas dificeis em Ciencia da Computacao: invalidacao de cache, nomes, e erros off-by-one.
+Existem 10 tipos de pessoas: as que entendem binario e as que nao.
+A melhor coisa de um Boolean e que mesmo se voce estiver errado, esta errado por apenas um bit.
+Um bom programador e alguem que olha para os dois lados antes de atravessar uma rua de mao unica.
+Existem dois jeitos de escrever programas sem erros; so o terceiro funciona.
+Como assim 911 e so pra emergencias? Eu tenho um merge conflict!
+Dias desde que encontrei um erro de indice de array: -1.
+Unix e amigavel. So e muito exigente com quem sao seus amigos.
+A linguagem C combina todo o poder do assembly com toda a facilidade de uso do assembly.
+!false — e engracado porque e true.
+['hip', 'hip'] — hip hip array!
+Por que o desenvolvedor foi a falencia? Usou todo o cache.
+Depuracao e como ser o detetive num drama policial onde voce tambem e o assassino.
+Adoro apertar F5. E refreshing.
+Por que programadores preferem dark mode? Porque luz atrai bugs.
+O manual dizia 'Instale no Windows 95, NT 4.0, ou melhor'. Entao instalei no Linux.
+Bug? Isso nao e um bug, e uma feature.
+Se nao funcionar de primeira, chame de versao 1.0.
+Voce nunca termina um programa, apenas para de trabalhar nele.
+Como o hacker escapou da policia? Ele simplesmente ransomware.
+Existem tres tipos de mentiras: mentiras, mentiras deslavadas, e benchmarks.
+Depuracao: remover agulhas do palheiro.
+O que o roteador disse pro medico? Doi quando IP.
+99 bugs no codigo, 99 bugs... Corrige um, faz deploy... 127 bugs no codigo.
+Tenho uma piada HTTP mas se eu POST voce nao vai GET.
+Ei! Compilou! Manda pro deploy!
+Minha atitude nao e ruim. Esta em beta.
+Programadores sao ferramentas para converter cafeina em codigo.
+git pull por dia mantem os conflitos longe.
+Commit cedo, commit frequente. Uma dica pra controle de versao — nao pra relacionamentos.
+Um branch, uma tag e um reflog entram num bar. O barman diz: 'O que e isso, algum tipo de rebase?'
+Cuidado ao reescrever a historia. Isso pode te levar ao lado sombrio do --force.
+git-blame: destruindo amizades desde 2006.
+Em caso de incendio: git commit, git push, saia do predio.
+Que o --force esteja com voce.
+O problema com piadas de git? Todo mundo tem sua propria versao.
+Qual e a ferramenta mais leal do programador? Git, por causa do COMMITimento!
+git happens.
+Todos aqueles commits serao perdidos no tempo... Como lagrimas na chuva... Hora do gc.
+Por que o commit terminou com a tag? Precisava de mais branch space.
+Por que o repositorio git estava triste? Tinha conflitos demais nao resolvidos.
+Existem 10 tipos de pessoas: as que entendem hexadecimal e mais 15.
+O que voce chama de oito hobbits? Um hobbyte.
+Inteligencia artificial geralmente vence estupidez real.
+Computadores sao como ar-condicionado: param de funcionar quando voce abre o Windows.
+Nao sou anti-social; apenas nao sou user-friendly.
+Aprender JavaScript e como olhar pros dois lados antes de atravessar a rua, e ser atropelado por um aviao.
+Um elevador abre e tem um programador dentro. Perguntam: 'Sobe ou desce?' O programador responde: 'Sim.'
+O que um bit diz pro outro? Nos vemos no bus.
+Assaltante: O dinheiro ou a vida! Programador: Desculpe, sou programador. Assaltante: E dai? Programador: Nao tenho nem dinheiro nem vida.
+Hardware: a parte do computador que voce pode chutar.
+Vendo teclado quase novo a bom preco, somente falha uma tecla: rro 0094782.
+Erro 0094782: Nenhum teclado detectado. Pressione uma tecla para continuar...
+Quando um informatico te diz que tem gemeos, na verdade tem um filho e a copia de seguranca.
+

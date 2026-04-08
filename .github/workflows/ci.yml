@@ -1,0 +1,121 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  shellcheck:
+    name: ShellCheck
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+      - name: Run ShellCheck
+        uses: ludeeus/action-shellcheck@00cae500b08a931fb5698e11e79bfbd38e612a38 # 2.0.0
+        with:
+          scandir: .
+          check_together: 'yes'
+
+  test:
+    name: Tests (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+      - name: Install jq (macOS)
+        if: matrix.os == 'macos-latest'
+        run: brew install jq
+      - name: Run test suite
+        run: bash tests/test_rimshot.sh
+
+  validate-jokes:
+    name: Validate Jokes
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+
+      - name: Check minimum joke count (10 per file)
+        run: |
+          exit_code=0
+          for file in jokes/*.txt; do
+            count=$(grep -cv '^#\|^$' "$file" || true)
+            name=$(basename "$file")
+            if [ "$count" -lt 10 ]; then
+              echo "FAIL: $name has only $count jokes (minimum 10)"
+              exit_code=1
+            else
+              echo "OK: $name has $count jokes"
+            fi
+          done
+          exit $exit_code
+
+      - name: Check for duplicate jokes
+        run: |
+          exit_code=0
+          for file in jokes/*.txt; do
+            dupes=$(grep -v '^#' "$file" | grep -v '^$' | sort | uniq -d)
+            name=$(basename "$file")
+            if [ -n "$dupes" ]; then
+              echo "FAIL: $name has duplicates:"
+              echo "$dupes"
+              exit_code=1
+            else
+              echo "OK: $name has no duplicates"
+            fi
+          done
+          exit $exit_code
+
+      - name: Check joke length (max 300 chars)
+        run: |
+          exit_code=0
+          for file in jokes/*.txt; do
+            name=$(basename "$file")
+            line_num=0
+            while IFS= read -r line; do
+              line_num=$((line_num + 1))
+              [ -z "$line" ] || [ "${line#\#}" != "$line" ] && continue
+              len=${#line}
+              if [ "$len" -gt 300 ]; then
+                echo "FAIL: $name:$line_num is $len chars (max 300)"
+                exit_code=1
+              fi
+            done < "$file"
+            [ $exit_code -eq 0 ] && echo "OK: $name line lengths valid"
+          done
+          exit $exit_code
+
+      - name: Check no trailing whitespace
+        run: |
+          exit_code=0
+          for file in jokes/*.txt; do
+            name=$(basename "$file")
+            if grep -Pn '\s+$' "$file" 2>/dev/null | head -5 | grep -q .; then
+              echo "FAIL: $name has trailing whitespace:"
+              grep -Pn '\s+$' "$file" | head -5
+              exit_code=1
+            else
+              echo "OK: $name has no trailing whitespace"
+            fi
+          done
+          exit $exit_code
+
+      - name: Check UTF-8 encoding
+        run: |
+          exit_code=0
+          for file in jokes/*.txt; do
+            name=$(basename "$file")
+            if ! file "$file" | grep -qi "text"; then
+              echo "FAIL: $name is not a valid text file"
+              exit_code=1
+            else
+              echo "OK: $name is valid text"
+            fi
+          done
+          exit $exit_code

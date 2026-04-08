@@ -1,0 +1,7 @@
+# shellcheck configuration for rimshot
+# https://www.shellcheck.net/wiki/
+
+# Allow sourcing from paths
+external-sources=true
+
+# Disable specific checks if needed (currently none)

@@ -1,0 +1,15 @@
+# rimshot configuration
+# Copy to ~/.claude/rimshot/rimshot.conf or let install.sh create it.
+# See: https://github.com/dbfarias/rimshot#configuration
+
+# Language for jokes (en, pt-BR, es, fr)
+# Auto-detected from system locale if not set.
+LANG=en
+
+# Percentage chance of showing a joke per tool call (0-100)
+# Lower values = less frequent. 0 = disabled. 100 = every tool call.
+FREQUENCY=30
+
+# Minimum seconds between jokes (0 to disable cooldown)
+# Prevents joke overload during rapid tool calls.
+COOLDOWN=10
